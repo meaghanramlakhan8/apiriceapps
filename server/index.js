@@ -11,3 +11,7 @@ const server = app.listen(port, () => {
 });
 
 module.exports = app;
+
+app.get("/Home", (req, res, next) => {
+    res.json({"message": "Hello World"});
+   });
